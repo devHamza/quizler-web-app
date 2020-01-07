@@ -1,0 +1,88 @@
+<div class="app-home container">
+
+    <div class="row title-row">
+        <div class="col">
+            <h1>{{questionsData.quiz_title}}</h1>
+        </div>
+    </div>
+    <div class="header-section">
+        <div class="row">
+            <div class="col">
+                <p [innerHTML]="questionsData.quiz_description"></p>
+
+                <mat-card *ngIf="!showResults">
+                    <mat-horizontal-stepper [linear]="!questionsData.allow_stepper_navigation" #stepper
+                        class="quiz-stepper">
+                        <mat-step *ngFor="let q of questionsData.questions; let i=index;">
+                            <h2>{{q.question}}</h2>
+                            <p [hidden]="!q.multiple_answers">Plusieurs choix sont autorisés</p>
+                            <p [hidden]="q.multiple_answers">Un seul choix autorisé</p>
+
+                            <div class="stepperQuiz">
+                                <div *ngIf="q.multiple_answers">
+                                    <mat-checkbox *ngFor="let answer of q.answers" [(ngModel)]="answer.selected">
+                                        {{answer.label}}</mat-checkbox>
+                                </div>
+
+                                <div *ngIf="!q.multiple_answers">
+                                    <mat-radio-group [(ngModel)]="q.selectedAnswer">
+                                        <mat-radio-button *ngFor="let answer of q.answers" [value]="answer">
+                                            {{answer.label}}
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="stepperNext">
+                                    <button mat-stroked-button matStepperPrevious [hidden]="i == 0">Précédent</button>
+                                    <button mat-stroked-button matStepperNext color="primary">Suivant</button>
+                                </div>
+                            </div>
+                        </mat-step>
+
+                        <mat-step>
+
+                            <div class="last-step">
+                                <mat-icon>check_circle_outline</mat-icon>
+                                <h2>Vous avez terminé ! </h2>
+                            </div>
+                            <div class="stepperNext">
+                                <button mat-stroked-button matStepperPrevious>Précédent</button>
+                                <button mat-stroked-button (click)="calculateResults()" color="primary">Voir les
+                                    resultats</button>
+                            </div>
+                        </mat-step>
+                    </mat-horizontal-stepper>
+                </mat-card>
+
+
+                <mat-card class="results" *ngIf="showResults">
+                    <h1 class="final-result">{{finalSentence}} </h1>
+
+                    <div class="graph-container">
+                        <ngx-charts-pie-grid class="graph" [view]="view" [scheme]="colorScheme" [results]="data">
+                        </ngx-charts-pie-grid>
+                    </div>
+
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let factor of data; let i = index;">
+                                <th scope="row">{{i + 1}}</th>
+                                <td>{{factor.name}}</td>
+                                <td><strong>{{factor.value}} points</strong></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <button class="mx-auto" mat-stroked-button (click)="reset()" color="primary">Recommencer le
+                        quiz</button>
+
+
+
+                </mat-card>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

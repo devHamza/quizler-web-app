@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/bootstrap';
+@font-face {
+    font-family: 'basiercircle-regular';
+    src: url('assets/fonts/basiercircle-regular-webfont.eot');
+    src: url('assets/fonts/basiercircle-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/basiercircle-regular-webfont.woff') format('woff'),
+         url('assets/fonts/basiercircle-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/basiercircle-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*{
+    font-family: "basiercircle-regular", Roboto, "Helvetica Neue", sans-serif; 
+}
+

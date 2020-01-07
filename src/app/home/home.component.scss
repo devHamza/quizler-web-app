@@ -1,0 +1,121 @@
+
+.app-home {
+  
+   .title-row{
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+        h1{
+            color: #070636;
+            font-size: 60px;
+            font-weight: bold;
+        }
+   }
+    .header-section{
+        padding: 20px;
+        color: white;
+        font-size: 16px;
+        background-color: #f0f3fa;
+        border-radius: 20px;
+        color: #070636;
+        
+    }
+    .quiz-stepper{
+        h2{
+            color: #070636;
+        }
+
+        .mat-step-label{
+            display: none;
+        }
+
+        .stepperQuiz{
+            margin-top: 30px;
+        }
+        .mat-checkbox, .mat-radio-button{
+            margin-top: 10px;
+            border-radius: 5px;
+            display: block;
+            background: #26a99a;
+            opacity: 0.5;
+            color: white;
+            
+            &.mat-radio-checked, &.mat-checkbox-checked{
+                opacity: 1;
+                font-weight: bold;
+            }
+            .mat-radio-label{
+                .mat-radio-container{
+                    display: none;
+                    margin: 0px;
+                    margin-right: 10px;
+                }
+                .mat-radio-label-content{
+                    width : 100%;
+                    padding: 5px;   
+                    text-align: center; 
+                }
+            }
+            .mat-checkbox-layout{
+                width: 100%;
+                text-align: center;
+                .mat-checkbox-inner-container{
+                    display: none;
+                    margin: 0px;
+                    margin-right: 10px;
+                }
+                .mat-checkbox-label{
+                    width : 100%;
+                    padding: 5px;
+                }
+            }
+        }
+        .stepperNext{
+            padding-top: 20px;
+            text-align: right;
+            .mat-stroked-button{
+                margin-left: 10px;
+                font-weight: bold;
+            }
+
+        }
+        .last-step{
+            .mat-icon{
+                font-size: 60px;
+                color: #4BB543;
+            }
+            text-align: center;
+        }
+    }
+
+
+    .results{
+        margin-top: 20px;
+       
+        .final-result{
+            color: #070636;
+            text-align: center;
+            font-size: 40px;
+        }
+        .table{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .graph-container{
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            .ngx-charts-outer {
+                width: 100% !important;
+            }
+            .ngx-charts{
+                float: none !important;
+            }
+            .graph{
+                margin:auto;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

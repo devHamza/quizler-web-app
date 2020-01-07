@@ -1,0 +1,258 @@
+﻿{
+  "quiz_title": "My Holly Quiz",
+  "quiz_description": "Bienvenue à tous, <br/><br/> Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500 <br/><br/> Bonne navigation ",
+  "allow_stepper_navigation": false,
+  "questions": [
+    {
+      "question": "Que préfères-tu ?",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Un nounours",
+          "factors": [
+            {
+              "id": "clever",
+              "weigth": -1
+            },
+            {
+              "id": "brave",
+              "weigth": 3
+            }
+          ]
+        },
+        {
+          "label": "Un marteau",
+          "factors": [
+            {
+              "id": "brave",
+              "weigth": 5
+            },
+            {
+              "id": "clever",
+              "weigth": 5
+            }
+          ]
+        },
+        {
+          "label": "Une sucette",
+          "factors": [
+            {
+              "id": "friendly",
+              "weigth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Quel parfum préfères-tu ?",
+      "multiple_answers": true,
+      "answers": [
+        {
+          "label": "Menthe",
+          "factors": [
+            {
+              "id": "clever",
+              "weigth": 4
+            }
+          ]
+        },
+        {
+          "label": "Fraise",
+          "factors": [
+            {
+              "id": "clever",
+              "weigth": 5
+            },
+            {
+              "id": "lazy",
+              "weigth": 2
+            }
+          ]
+        },
+        {
+          "label": "Framboise bleue",
+          "factors": [
+            {
+              "id": "honest",
+              "weigth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Aimes-tu la bagarre ?",
+      "multiple_answers": true,
+      "answers": [
+        {
+          "label": "Beaucoup, j'adore ça.",
+          "factors": [
+            {
+              "id": "clever",
+              "weigth": -2
+            },
+            {
+              "id": "brave",
+              "weigth": 5
+            }
+          ]
+        },
+        {
+          "label": "J'aime bien.",
+          "factors": [
+            {
+              "id": "clever",
+              "weigth": -1
+            },
+            {
+              "id": "lazy",
+              "weigth": -2
+            },
+            {
+              "id": "brave",
+              "weigth": 4
+            }
+          ]
+        },
+        {
+          "label": "Bof",
+          "factors": [
+            {
+              "id": "honest",
+              "weigth": 2
+            },
+            {
+              "id": "lazy",
+              "weigth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Tu aimerais pouvoir... ",
+      "multiple_answers": true,
+      "answers": [
+        {
+          "label": "Voler",
+          "factors": [
+            {
+              "id": "clever",
+              "weigth": -2
+            },
+            {
+              "id": "brave",
+              "weigth": 5
+            }
+          ]
+        },
+        {
+          "label": "Respirer dans l'eau",
+          "factors": [
+            {
+              "id": "clever",
+              "weigth": -1
+            },
+            {
+              "id": "lazy",
+              "weigth": -2
+            },
+            {
+              "id": "brave",
+              "weigth": 4
+            }
+          ]
+        },
+        {
+          "label": "Cracher du feu",
+          "factors": [
+            {
+              "id": "honest",
+              "weigth": 2
+            },
+            {
+              "id": "lazy",
+              "weigth": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Tu voudrais être...",
+      "multiple_answers": true,
+      "answers": [
+        {
+          "label": "Gentil",
+          "factors": [
+            {
+              "id": "clever",
+              "weigth": -1
+            },
+            {
+              "id": "friendly",
+              "weigth": 5
+            }
+          ]
+        },
+        {
+          "label": "Méchant",
+          "factors": [
+            {
+              "id": "clever",
+              "weigth": -1
+            },
+            {
+              "id": "lazy",
+              "weigth": -2
+            },
+            {
+              "id": "brave",
+              "weigth": 4
+            }
+          ]
+        },
+        {
+          "label": "Désagréable",
+          "factors": [
+            {
+              "id": "honest",
+              "weigth": 2
+            },
+            {
+              "id": "lazy",
+              "weigth": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "factors": {
+    "clever": {
+      "label": "Intelligent",
+      "final_sentence": "Vous avez fait preuve d'une grande intelligence"
+    },
+    "awesome": {
+      "label": "Magnifique",
+      "final_sentence": "Vous êtes magnifique :D "
+    },
+    "brave": {
+      "label": "Courageux",
+      "final_sentence": "Vous êtes courageux :D "
+    },
+    "friendly": {
+      "label": "Amicale",
+      "final_sentence": "Vous êtes courageux :D "
+    },
+    "honest": {
+      "label": "Honête",
+      "final_sentence": "Vous êtes Honête :D "
+    },
+    "lazy": {
+      "label": "Paresseux",
+      "final_sentence": "Vous êtes Paresseux :D "
+    }
+  }
+}
