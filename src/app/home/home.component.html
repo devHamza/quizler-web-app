@@ -55,7 +55,7 @@
 
 
                 <mat-card class="results" *ngIf="showResults">
-                    <h1 class="final-result">{{finalSentence}} </h1>
+                    <div class="final-result" [innerHTML]="finalSentence"></div>
 
                     <div class="graph-container">
                         <ngx-charts-pie-grid class="graph" [view]="view" [scheme]="colorScheme" [results]="data">

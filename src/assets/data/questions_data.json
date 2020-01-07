@@ -1,228 +1,459 @@
 ﻿{
-  "quiz_title": "My Holly Quiz",
-  "quiz_description": "Bienvenue à tous, <br/><br/> Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500 <br/><br/> Bonne navigation ",
+  "quiz_title": "Typologie des joueurs",
+  "quiz_description": "Ce test est inspiré des <a href='http://mud.co.uk/richard/hcds.htm'>études</a> de Richard Bartle sur les types de joueurs. Selon Bartle, les joueurs se divient en 4 groupes selon ce qui les motive dans le jeu : Les 'Socializers', qui recherchent à travers le jeu des interactions humaines, les 'Achievers' qui cherchent à accomplir des tâches et à progresser, les 'Fighters' qui recherchent la compétition et la confrontation et enfin les 'Explorers' qui cherchent à découvrir et assouvir leur curiosité. Cette classification en 4 grandes familles a été discutée et améliorée par la suite puisque chaque famille peut par exemple être divisée en 2 catégories plus précises (Dominique Mangiatordi).<br/> Nous sommes tous un savant mélange de ces 4 types de joueurs. Les questions qui suivent vous permettrons de découvrir quel est votre type prédominant.",
   "allow_stepper_navigation": false,
   "questions": [
     {
-      "question": "Que préfères-tu ?",
+      "question": "Vous aimez à gagner :",
       "multiple_answers": false,
       "answers": [
         {
-          "label": "Un nounours",
+          "label": "Pour prouver que c'est moi le meilleur",
           "factors": [
             {
-              "id": "clever",
-              "weigth": -1
-            },
-            {
-              "id": "brave",
-              "weigth": 3
+              "id": "fighter",
+              "weigth": 1
             }
           ]
         },
         {
-          "label": "Un marteau",
+          "label": "Uniquement s'il y a quelque chose à gagner",
           "factors": [
             {
-              "id": "brave",
-              "weigth": 5
-            },
-            {
-              "id": "clever",
-              "weigth": 5
-            }
-          ]
-        },
-        {
-          "label": "Une sucette",
-          "factors": [
-            {
-              "id": "friendly",
-              "weigth": 2
+              "id": "achiever",
+              "weigth": 1
             }
           ]
         }
       ]
     },
     {
-      "question": "Quel parfum préfères-tu ?",
-      "multiple_answers": true,
+      "question": "Dans votre sport favori vous réalisez un exploit (geste technique, record battu...) ",
+      "multiple_answers": false,
       "answers": [
         {
-          "label": "Menthe",
+          "label": "Dommage que je sois seul, j'aurais aimé le partager !",
           "factors": [
             {
-              "id": "clever",
-              "weigth": 4
+              "id": "socializer",
+              "weigth": 1
             }
           ]
         },
         {
-          "label": "Fraise",
+          "label": "Génial, cela veut dire que je progresse !",
           "factors": [
             {
-              "id": "clever",
-              "weigth": 5
-            },
-            {
-              "id": "lazy",
-              "weigth": 2
-            }
-          ]
-        },
-        {
-          "label": "Framboise bleue",
-          "factors": [
-            {
-              "id": "honest",
-              "weigth": 2
+              "id": "achiever",
+              "weigth": 1
             }
           ]
         }
       ]
     },
     {
-      "question": "Aimes-tu la bagarre ?",
-      "multiple_answers": true,
+      "question": "Si vous organisez une soirée jeux de société votre but est :",
+      "multiple_answers": false,
       "answers": [
         {
-          "label": "Beaucoup, j'adore ça.",
+          "label": "Que tout le monde passe une soirée agréable",
           "factors": [
             {
-              "id": "clever",
-              "weigth": -2
-            },
-            {
-              "id": "brave",
-              "weigth": 5
+              "id": "socializer",
+              "weigth": 1
             }
           ]
         },
         {
-          "label": "J'aime bien.",
+          "label": "Découvrir de nouveaux jeux",
           "factors": [
             {
-              "id": "clever",
-              "weigth": -1
-            },
-            {
-              "id": "lazy",
-              "weigth": -2
-            },
-            {
-              "id": "brave",
-              "weigth": 4
+              "id": "explorer",
+              "weigth": 1
             }
           ]
         },
         {
-          "label": "Bof",
+          "label": "Voir qui est le meilleur",
           "factors": [
             {
-              "id": "honest",
-              "weigth": 2
-            },
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Parfaire votre stratégie sur vos jeux favoris",
+          "factors": [
             {
-              "id": "lazy",
-              "weigth": 2
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }  
+      ]
+    },
+    {
+      "question": "Quels jeux sont installés sur votre téléphone ?",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Ceux pour lesquels j'ai reçu des invitations ou qui me permettent de jouer avec des amis",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Des jeux inconnus que je fais découvrir à mes amis",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
             }
           ]
         }
       ]
     },
     {
-      "question": "Tu aimerais pouvoir... ",
-      "multiple_answers": true,
+      "question": "Durant une partie, un de vos coéquipier vous trahit. Vous décidez de :",
+      "multiple_answers": false,
       "answers": [
         {
-          "label": "Voler",
+          "label": "Le convaincre qu'il ferait mieux de s'allier avec moi s'il veut gagner",
           "factors": [
             {
-              "id": "clever",
-              "weigth": -2
-            },
-            {
-              "id": "brave",
-              "weigth": 5
+              "id": "socializer",
+              "weigth": 1
             }
           ]
         },
         {
-          "label": "Respirer dans l'eau",
+          "label": "Me venger, quitte a perdre... il perdra aussi",
           "factors": [
             {
-              "id": "clever",
-              "weigth": -1
-            },
-            {
-              "id": "lazy",
-              "weigth": -2
-            },
-            {
-              "id": "brave",
-              "weigth": 4
-            }
-          ]
-        },
-        {
-          "label": "Cracher du feu",
-          "factors": [
-            {
-              "id": "honest",
-              "weigth": 2
-            },
-            {
-              "id": "lazy",
-              "weigth": 2
+              "id": "fighter",
+              "weigth": 1
             }
           ]
         }
       ]
     },
     {
-      "question": "Tu voudrais être...",
-      "multiple_answers": true,
+      "question": "Dans un escape game vous êtes celui qui",
+      "multiple_answers": false,
       "answers": [
         {
-          "label": "Gentil",
+          "label": "Explore les moindre recoins de la salle pour trouver les éléments du jeu",
           "factors": [
             {
-              "id": "clever",
-              "weigth": -1
-            },
-            {
-              "id": "friendly",
-              "weigth": 5
+              "id": "explorer",
+              "weigth": 1
             }
           ]
         },
         {
-          "label": "Méchant",
+          "label": "Se tient au milieu pour résoudre les énigmes",
           "factors": [
             {
-              "id": "clever",
-              "weigth": -1
-            },
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Qu'est ce qui vous motive dans la pratique d'un sport ?",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Avoir une progression constante et le maitriser de plus en plus",
+          "factors": [
             {
-              "id": "lazy",
-              "weigth": -2
-            },
-            {
-              "id": "brave",
-              "weigth": 4
+              "id": "achiever",
+              "weigth": 1
             }
           ]
         },
         {
-          "label": "Désagréable",
+          "label": "Partager des moments forts avec d'autres personnes",
           "factors": [
             {
-              "id": "honest",
-              "weigth": 2
-            },
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "La possibilité de se mesurer aux autres",
+          "factors": [
             {
-              "id": "lazy",
-              "weigth": 2
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Découvrir sans cesse de nouvelles subtilités du jeu",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Votre citation préférée :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "\"Qu'ils me haïssent, pourvu qu'ils me craignent\"",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "\"Un pour tous, tous pour un\"",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous venez d'acheter un nouveau jeu de société :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "J'invite des amis pour qu'on le découvre ensemble",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Je m'entraîne pour avoir une longueur d'avance lors de la première partie",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Je lis en détail les règles pour être sûr de ne rater aucune subtilité du jeu",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        },      
+        {
+          "label": "\"Super ! Un de plus a découvrir !\"",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Lors d'un jeu de société vous sentez que vous risquez de perdre la partie, quelle est votre réaction :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Je triche : L'important c'est de gagner",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "C'est l'occasion idéale de tester cette nouvelle stratégie que j'ai imaginé",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Si vous devez choisir un jeu en ligne sur lequel jouer, vous en choisiriez un :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Avec des missions variées et intéressantes.",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Avec une grande communauté pour rencontrer du monde.",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vos amis vous conaissent comme étant :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Celui qui gagne tout le temps.",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Celui qui connaît le plus grand nombre de jeux et en découvre sans cesse de nouveaux.",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Pour vous quel est l'avantage des jeux vidéos par rapport aux jeux de plateau ?",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "La possibilité d'explorer de vastes univers.",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "La possiblité de jouer avec un grand nombre de personne.",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "La possibilité de se mesurer à plus de monde.",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "La possiblilité d'évoluer dans un univers aux infinies possibilités.",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous avez choisi votre nouveau jeu de société",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Parce que tout le monde y joue, ce sera plus simple pour organiser des soirées.",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Parce que personne ne le connaît, vous aimez découvrir les jeux avant tout le monde.",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Dans un MMORPG (jeu massivement multijoueur), vous préférez être connu comme :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Celui qui connaît la carte par coeur.",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Celui qui a accompli toutes les quêtes.",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous vous retrouvez seul sur un jeu en réseau..",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "\"C'est le moment idéal pour explorer la carte dans ses moindres détails\"",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "\"Aucun intérêt, il n'y a personne a qui se mesurer\"",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
             }
           ]
         }
@@ -230,29 +461,21 @@
     }
   ],
   "factors": {
-    "clever": {
-      "label": "Intelligent",
-      "final_sentence": "Vous avez fait preuve d'une grande intelligence"
+    "socializer": {
+      "label": "Socializer",
+      "final_sentence": "Vous êtes majoritairement 'Socializer', ce que vous recherchez dans le jeu c'est avant tout l'aventure humaine qui la compose. Que ce soit dans les jeux vidéos, les jeux de société ou le sport, ce qui vous intéresse ce sont les interactions avec vos partenaires ou adversaires. <br/>Selon votre caractère vous pouvez être 'Socializer-Rockstar' et motivé par la reconaissance des autres ou 'Socializer-Coach', motivé par la possiblité d'aider vos condisciples."
     },
-    "awesome": {
-      "label": "Magnifique",
-      "final_sentence": "Vous êtes magnifique :D "
+    "achiever": {
+      "label": "Achiever",
+      "final_sentence": "Vous êtes majoritairement 'Achiever', ce qui vous motive dans le jeu est principalement la possibilité de progresser. Que ce soit en maitrisant de nouvelle techniques, de nouvelles stratégies ou tout simplement en accomplissant des missions. Votre but est simple : progresser encore et toujours. <br/>Selon votre caractère vous pouvez être 'Achiever-Collector' et motivé par la thésaurisation de mission ou de collectionnables ou 'Achiever-Expert', motivé par la possibilité de maitriser à 100% un ou plusieurs points du jeu."
     },
-    "brave": {
-      "label": "Courageux",
-      "final_sentence": "Vous êtes courageux :D "
+    "fighter": {
+      "label": "Fighter",
+      "final_sentence": "Vous êtes majoritairement 'Fighter', ce que vous recherchez c'est avant tout la confrontation, la possibilité de vous mesurer aux autre pour montrer que vous êtes le meilleur. <br/>Selon votre caractère vous pouvez être 'Fighter-Competitor', votre but alors est de montrer que vous êtes le meilleur tout en restant dansles règles du jeu. Pour vous tricher est l'aveu de faiblesse de ceux qui sont incapables de gagner 'à la régulière'. Vous pouvez également être 'Fighter-Killer'. Votre but est alors de gagner à tout prix, quitte enfreindre les règles ou vous faire des ennemis : seule la vistoire est belle !"
     },
-    "friendly": {
-      "label": "Amicale",
-      "final_sentence": "Vous êtes courageux :D "
-    },
-    "honest": {
-      "label": "Honête",
-      "final_sentence": "Vous êtes Honête :D "
-    },
-    "lazy": {
-      "label": "Paresseux",
-      "final_sentence": "Vous êtes Paresseux :D "
+    "explorer": {
+      "label": "Explorer",
+      "final_sentence": "Vous êtes majoritairement 'Explorer', ce qui vous motive dans un jeu c'est la partie de découverte qu'il comporte. Que ce soit dans les jeux physiques ou plus souvent dans les jeux vidéos ce qui vous motive c'est la perspective de vastes univers inexplorés à parcourir. <br/> Selon votre caractère vous pouvez être 'Explorer-Detective' et motivé par la résolution de problèmes sans cesse nouveaux ou 'Explorer-Navigator', motivé par la découverte pure de choses inexplorées."
     }
   }
 }
