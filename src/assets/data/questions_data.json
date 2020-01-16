@@ -1,5 +1,5 @@
 ﻿{
-  "quiz_title": "Typologie des joueurs",
+  "quiz_title": "TYPOLOGIE DES <span class='span_title'>JOUEURS</span>",
   "quiz_description": "Ce test est inspiré des <a href='http://mud.co.uk/richard/hcds.htm'>études</a> de Richard Bartle sur les types de joueurs. Selon Bartle, les joueurs se divient en 4 groupes selon ce qui les motive dans le jeu : Les 'Socializers', qui recherchent à travers le jeu des interactions humaines, les 'Achievers' qui cherchent à accomplir des tâches et à progresser, les 'Fighters' qui recherchent la compétition et la confrontation et enfin les 'Explorers' qui cherchent à découvrir et assouvir leur curiosité. Cette classification en 4 grandes familles a été discutée et améliorée par la suite puisque chaque famille peut par exemple être divisée en 2 catégories plus précises (Dominique Mangiatordi).<br/> Nous sommes tous un savant mélange de ces 4 types de joueurs. Les questions qui suivent vous permettrons de découvrir quel est votre type prédominant.",
   "allow_stepper_navigation": false,
   "questions": [
