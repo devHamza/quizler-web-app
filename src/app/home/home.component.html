@@ -1,13 +1,14 @@
+<div id="background">
 <div id="content">
     
     <div class="app-home container">
 
         <div class="logo"></div>
-        <div class="row title-row">
+        <!--<div class="row title-row">
             <div class="col">
                 <h1 [innerHTML]="questionsData.quiz_title"></h1>
             </div>
-        </div>
+        </div>-->
         <div class="header-section">
             <div class="row">
                 <div class="col">
@@ -18,8 +19,6 @@
                             class="quiz-stepper">
                             <mat-step *ngFor="let q of questionsData.questions; let i=index;">
                                 <h2>{{q.question}}</h2>
-                                <p [hidden]="!q.multiple_answers">Plusieurs choix sont autorisés</p>
-                                <p [hidden]="q.multiple_answers">Un seul choix autorisé</p>
 
                                 <div class="stepperQuiz">
                                     <div *ngIf="q.multiple_answers">
@@ -58,8 +57,14 @@
 
 
                     <mat-card class="results" *ngIf="showResults">
+                        <div class="result_gauche" style="background-image:url(/assets/img/)">
+                            
+                        </div>
+                        <div class="header-result">
+                            <!--<img src="/assets/img/">-->
+                        Vous êtes majoritairement   
                         <div class="final-result" [innerHTML]="finalSentence"></div>
-
+                        </div>
                         <div class="graph-container">
                             <ngx-charts-pie-grid class="graph" [view]="view" [scheme]="colorScheme" [results]="data">
                             </ngx-charts-pie-grid>
@@ -90,4 +95,5 @@
 
     </div>
 
+</div>
 </div>
