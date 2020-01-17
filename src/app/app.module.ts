@@ -24,6 +24,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { OnboardComponent } from './onboard/onboard.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { OnboardComponent } from './onboard/onboard.component';
     MatListModule,
     MatCardModule,
     MatFormFieldModule,
+    MatProgressBarModule,
     MatSelectModule,
     MatButtonModule,
     MatBottomSheetModule,

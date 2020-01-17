@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit {
 
   view: any[] = [];
   finalSentence = '';
+  progressPercent = 0;
+  currentQuestionIndex = 1;
   // options
   showLegend = true;
   showLabels = true;
@@ -27,6 +29,12 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  stepperChange(ev) {
+    this.progressPercent = ev.selectedIndex * 100 / this.questionsData.questions.length;
+    this.currentQuestionIndex = ev.selectedIndex < this.questionsData.questions.length ?
+      ev.selectedIndex + 1 : this.questionsData.questions.length;
   }
 
   calculateResults() {
@@ -49,6 +57,7 @@ export class HomeComponent implements OnInit {
         result[factor.id] = factor.weigth;
       }
     }
+
 
     // draw charts
     const resultKeys = _.keys(this.questionsData.factors);
