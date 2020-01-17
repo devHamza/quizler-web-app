@@ -23,11 +23,13 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { OnboardComponent } from './onboard/onboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    OnboardComponent
   ],
   entryComponents: [],
   imports: [

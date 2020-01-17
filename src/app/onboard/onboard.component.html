@@ -1,0 +1,9 @@
+<div class="app-onboard container">
+    <h1>{{questionsData.quiz_title}}</h1>
+
+
+    <p [innerHTML]="questionsData.quiz_description"></p>
+
+    <button mat-stroked-button color="primary" [routerLink]="['/home']">Commencer le test</button>
+
+</div>
