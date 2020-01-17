@@ -11,9 +11,17 @@
                 <p [innerHTML]="questionsData.quiz_description"></p>
 
                 <mat-card *ngIf="!showResults">
+                    <mat-progress-bar mode="determinate" [value]="progressPercent"></mat-progress-bar>
+
+                    <div class="counter">
+                            {{currentQuestionIndex}} / {{questionsData.questions.length}}
+                    </div>
+
                     <mat-horizontal-stepper [linear]="!questionsData.allow_stepper_navigation" #stepper
-                        class="quiz-stepper">
+                        class="quiz-stepper" (selectionChange)="stepperChange($event)">
+
                         <mat-step *ngFor="let q of questionsData.questions; let i=index;">
+
                             <h2>{{q.question}}</h2>
                             <p [hidden]="!q.multiple_answers">Plusieurs choix sont autorisés</p>
                             <p [hidden]="q.multiple_answers">Un seul choix autorisé</p>

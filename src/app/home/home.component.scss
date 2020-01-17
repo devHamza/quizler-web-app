@@ -20,7 +20,21 @@
         color: #070636;
         
     }
+    .mat-progress-bar{
+        height: 10px;
+        border-radius: 6px;
+        margin-bottom: 8px;
+    }
+    .counter{
+        width: 100%;
+        text-align:  center;
+        margin-bottom: 20px;
+    }
     .quiz-stepper{
+        .mat-horizontal-stepper-header-container{
+            display: none;
+        }
+        
         h2{
             color: #070636;
         }
