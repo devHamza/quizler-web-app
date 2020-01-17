@@ -31,6 +31,18 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  isNextStepDisabled(index) {
+    const question = this.questionsData.questions[index];
+    if (!!question) {
+      if (!question.multiple_answers) {
+        return !!!question.selectedAnswer;
+      } else {
+        return question.answers.findIndex(elem => !!elem.selected) === -1;
+      }
+    }
+    return true;
+  }
+
   stepperChange(ev) {
     this.progressPercent = ev.selectedIndex * 100 / this.questionsData.questions.length;
     this.currentQuestionIndex = ev.selectedIndex < this.questionsData.questions.length ?
