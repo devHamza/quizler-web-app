@@ -106,8 +106,8 @@ export class HomeComponent implements OnInit {
         result_shape: this.questionsData.factors[key].shape,
         finalIntro: this.questionsData.factors[key].finalIntro,
         finalDetails: this.questionsData.factors[key].finalDetails,
-        marge: (Math.round((!!result[key] && result[key] > 0 ? result[key] : 0)/16*100)-85),
-        hauteur: Math.round((!!result[key] && result[key] > 0 ? result[key] : 0)/16*100)
+        marge: ((Math.round((!!result[key] && result[key] > 0 ? result[key] : 0)/16))*85)-85,
+        hauteur: (Math.round((!!result[key] && result[key] > 0 ? result[key] : 0)/16))*85
       });
     }
 

@@ -69,8 +69,8 @@
                                                 <th scope="row">
                                                 <div class="row-bg">
                                                     <img src={{factor.result_shape}} class="shape-bg"/>
-                                                    <div class="shape-crop" [ngStyle]="{'height.px':factor.hauteur}" >
-                                                        <img src={{factor.result_shape}} class="shape-color" [ngStyle]="{'margin-top.px': factor.marge}"/>  
+                                                    <div class="shape-crop">
+                                                        <img src={{factor.result_shape}} class="shape-color" [ngStyle]="clip-path: inset(80px 0px 0px 0px);"/>                  <!-------------- ICI ------------>
                                                     </div>    
                                                 </div>    
                                                     {{factor.name}}
