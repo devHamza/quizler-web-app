@@ -70,7 +70,7 @@
                                                 <div class="row-bg">
                                                     <img src={{factor.result_shape}} class="shape-bg"/>
                                                     <div class="shape-crop">
-                                                        <img src={{factor.result_shape}} class="shape-color" [ngStyle]="clip-path: inset(80px 0px 0px 0px);"/>                  <!-------------- ICI ------------>
+                                                        <img src={{factor.result_shape}} class="shape-color" [ngStyle]="{'clip-path': 'inset(' + (85 - factor.pourcent) + 'px 0px 0px 0px)'}" />                  <!-------------- ICI ------------>
                                                     </div>    
                                                 </div>    
                                                     {{factor.name}}
