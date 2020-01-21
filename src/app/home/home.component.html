@@ -4,11 +4,7 @@
         <div class="app-home container">
 
             <div class="logo"></div>
-            <!--<div class="row title-row">
-            <div class="col">
-                <h1 [innerHTML]="questionsData.quiz_title"></h1>
-            </div>
-        </div>-->
+       
             <div class="header-section">
                 <div class="row">
                     <div class="col">
@@ -66,30 +62,46 @@
 
 
                         <mat-card class="results" *ngIf="showResults">
-                            <div class="result_gauche" style="background-image:url(/assets/img/)">
-
+                            <div class="result_gauche">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr *ngFor="let factor of data; let i = index;">
+                                                <th scope="row">
+                                                <div class="row-bg">
+                                                    <img src={{factor.result_shape}} class="shape-bg"/>
+                                                    <div class="shape-crop" style={{factor.hauteur}} >
+                                                        <img src={{factor.result_shape}} class="shape-color" style={{factor.marge}}/>  
+                                                    </div>    
+                                                </div>    
+                                                    {{factor.name}}
+                                                <br/>
+                                                <div class="percentage">
+                                                    {{factor.pourcent}}%
+                                                </div>    
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="background-image" [innerHTML]="back"></div> 
                             </div>
                             <div class="header-result">
+                                <div class="final-image" [innerHTML]="img"></div>
                                 <!--<img src="/assets/img/">-->
-                                Vous êtes majoritairement
-                                <div class="final-result" [innerHTML]="finalSentence"></div>
+                                <span class="annonce">Vous êtes majoritairement</span>
+                                <div class="final-result" [innerHTML]="typeJoueur"></div>
+                                
                             </div>
-                            <div class="graph-container">
-                                <ngx-charts-pie-grid class="graph" [view]="view" [scheme]="colorScheme"
-                                    [results]="data">
-                                </ngx-charts-pie-grid>
+                            <div class="result_droit">
+                                <div class="intro">
+                                    {{finalInt}}
+                                </div>
+                                <div class="details" [innerHTML]="finalDet">
+                                </div>
+                                
+                                
+                            
                             </div>
 
-                            <table class="table">
-                                <tbody>
-                                    <tr *ngFor="let factor of data; let i = index;">
-                                        <th scope="row">{{i + 1}}</th>
-                                        <td>{{factor.name}}</td>
-                                        <td><strong>{{factor.value}} points</strong></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
 
                             <button class="mx-auto" mat-stroked-button (click)="reset()" color="primary">Recommencer le
                                 quiz</button>

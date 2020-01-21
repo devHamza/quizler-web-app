@@ -98,16 +98,35 @@
         margin-top:150px;
         
     }
+    
     .mat-progress-bar{
-        height: 10px;
+        height: 13px;
         border-radius: 6px;
         margin-bottom: 8px;
         margin-top: 10px !important;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: auto!important;
     }
+    
+    .mat-progress-bar-buffer{
+        background-color:#F0F0F0;
+        
+    }
+    
+    .mat-progress-bar-fill::after{
+        background-color: #4C84F0!important;
+    }
+    
     .counter{
         width: 100%;
         text-align:  center;
         margin-bottom: 20px;
+        margin-top:10px;
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 21px;
+        color: #888787;
     }
 
     
@@ -224,13 +243,58 @@
 
     .results{
         margin-top: 20px;
+        height: 100%;
        
         .result_gauche{
-                width: 200px; //--------------------
-                height: 300px;
+                width: 20%;
                 display: block;
                 float: left;
         }
+        
+        .result_droit{
+            float: left;
+            width: 80%;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .caractere{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #888787;
+        }
+        .carac-titre{
+            font-family: Baloo;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 25px;
+
+            color: #6787C3;
+        }
+        .carac-desc{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #888787;
+        }
+        
+        .intro{
+            font-family: Roboto Medium;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #717171;
+            margin-bottom: 25px;
+            margin-top: 15px;
+        }
+        
         .header-result{
                 font-family: Baloo;
                 font-style: normal;
@@ -240,16 +304,90 @@
                 color: #353535;
         }
         .final-result{
-            color: #070636;
-            text-align: center;
-            font-size: 20px;
-            float:left;
+            float: left;
+            width: 40%;
+            font-family: Baloo;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 63px;
+            color: #D2704C;
             display: block;
-            width: 80%;
+            text-align: left;
+            margin-left: 20px;
+        }
+        .final-image{
+            float: left;
+            top: 10px;
+            left: 0px;
+        }
+        
+        .annonce{
+            float: left;
+            margin-top: 70px;
+            margin-left: 20px;
+            display: block;
+            font-family: Baloo;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            color: #353535;
         }
         .table{
             width: 100%;
-            margin-top: 10px;
+            margin-top: 60px;
+        }
+        
+        .row{
+            text-align: center;
+            font-family: Baloo;
+            font-size: 18px;
+            line-height: 28px;
+            color: #4770C0;
+            
+        }
+        
+        .row-bg{
+            z-index: auto;
+        }
+        
+        .percentage{
+            text-align: center;
+            top: 32px;
+            font-size: 40px;
+            line-height: 63px;
+            font-family: Baloo; 
+            color: #FFFFFF;
+            padding-left: 28%;
+            position: absolute;
+        }
+        
+        .background-image{
+            position: absolute;
+            display: block;
+            top: 120px;
+            left: 0px;
+        }
+        
+        .shape-bg{opacity: 0.5;
+        }
+        .shape-color{
+            //margin-top: -55px;
+            width:85px;
+        }
+        
+        .shape-crop{
+            position: absolute;
+            left: 61px;
+            mix-blend-mode: normal;
+            bottom: 37px;
+            overflow: hidden;
+        }
+        
+        .table th{
+            border:none!important;
+            position:relative;
         }
         .graph-container{
             text-align: center;

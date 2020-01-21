@@ -1,6 +1,7 @@
 ﻿{
   "quiz_title": "TYPOLOGIE DES <span class='span_title'>JOUEURS</span>",
-  "quiz_description": "Ce test est inspiré des <a href='http://mud.co.uk/richard/hcds.htm'>études</a> de Richard Bartle sur les types de joueurs. Selon Bartle, les joueurs se divient en 4 groupes selon ce qui les motive dans le jeu : Les 'Socializers', qui recherchent à travers le jeu des interactions humaines, les 'Achievers' qui cherchent à accomplir des tâches et à progresser, les 'Fighters' qui recherchent la compétition et la confrontation et enfin les 'Explorers' qui cherchent à découvrir et assouvir leur curiosité. Cette classification en 4 grandes familles a été discutée et améliorée par la suite puisque chaque famille peut par exemple être divisée en 2 catégories plus précises (Dominique Mangiatordi).<br/> Nous sommes tous un savant mélange de ces 4 types de joueurs. Les questions qui suivent vous permettrons de découvrir quel est votre type prédominant.",
+  "quiz_description": "Ce test est inspiré des <a href='http://mud.co.uk/richard/hcds.htm'>études</a> de Richard Bartle sur les types de joueurs. Selon lui, les joueurs se divisent en 4 groupes en fonction de ce qui les motive dans le jeu.",
+  "quiz_laucher": "Nous sommes tous un savant mélange de ces 4 types de joueurs. Les questions qui suivent vous permettront de découvrir quel est votre type prédominant.",
   "allow_stepper_navigation": false,
   "questions": [
     {
@@ -463,19 +464,40 @@
   "factors": {
     "socializer": {
       "label": "Socializer",
-      "final_sentence": "Vous êtes majoritairement 'Socializer', ce que vous recherchez dans le jeu c'est avant tout l'aventure humaine qui la compose. Que ce soit dans les jeux vidéos, les jeux de société ou le sport, ce qui vous intéresse ce sont les interactions avec vos partenaires ou adversaires. <br/>Selon votre caractère vous pouvez être 'Socializer-Rockstar' et motivé par la reconaissance des autres ou 'Socializer-Coach', motivé par la possiblité d'aider vos condisciples."
+      "final_sentence": "Vous êtes majoritairement 'Socializer', ce que vous recherchez dans le jeu c'est avant tout l'aventure humaine qui la compose. Que ce soit dans les jeux vidéos, les jeux de société ou le sport, ce qui vous intéresse ce sont les interactions avec vos partenaires ou adversaires. <br/>Selon votre caractère vous pouvez être 'Socializer-Rockstar' et motivé par la reconaissance des autres ou 'Socializer-Coach', motivé par la possiblité d'aider vos condisciples.",
+      "image_finale": "<img src='/assets/img/socializer.png'/>",
+      "background_image": "<img src='/assets/img/bg_socializer.png'/>",
+      "shape": "/assets/img/shape_socializer.png",
+      "finalIntro": "Ce que vous recherchez dans le jeu c'est avant tout l'aventure humaine qui la compose. Que ce soit dans les jeux vidéos, les jeux de société ou le sport, ce qui vous intéresse ce sont les interactions avec vos partenaires ou adversaires.",
+      "finalDetails": "<p class='caractere'>Selon votre caractère vous pouvez être : </p> <span class='carac-titre'>Socializer-Rockstar</span><p class='carac-desc'>Vous êtes motivé par la reconnaissance des autres joueurs. Votre but ? Être connu et reconnu !</p><span class='carac-titre'>Socializer-Coach</span><p class='carac-desc'>Vous ne cherchez pas à être connu mais plutôt à aider les autres joueurs. Votre nature altruiste s’exprime pleinenemnt, même dans les jeux...</p>"    
     },
     "achiever": {
       "label": "Achiever",
-      "final_sentence": "Vous êtes majoritairement 'Achiever', ce qui vous motive dans le jeu est principalement la possibilité de progresser. Que ce soit en maitrisant de nouvelle techniques, de nouvelles stratégies ou tout simplement en accomplissant des missions. Votre but est simple : progresser encore et toujours. <br/>Selon votre caractère vous pouvez être 'Achiever-Collector' et motivé par la thésaurisation de mission ou de collectionnables ou 'Achiever-Expert', motivé par la possibilité de maitriser à 100% un ou plusieurs points du jeu."
+      "final_sentence": "Vous êtes majoritairement 'Achiever', ce qui vous motive dans le jeu est principalement la possibilité de progresser. Que ce soit en maitrisant de nouvelle techniques, de nouvelles stratégies ou tout simplement en accomplissant des missions. Votre but est simple : progresser encore et toujours. <br/>Selon votre caractère vous pouvez être 'Achiever-Collector' et motivé par la thésaurisation de mission ou de collectionnables ou 'Achiever-Expert', motivé par la possibilité de maitriser à 100% un ou plusieurs points du jeu.",
+      "image_finale": "<img src='/assets/img/achiever.png'/>",
+      "background_image": "<img src='/assets/img/bg_achiever.png'/>",
+      "shape": "/assets/img/shape_achiever.png",
+      "finalIntro": "Ce qui vous motive c’est la possibilité de progresser. Que ce soit en maitrisant de nouvelle techniques ou tout simplement en accomplissant des missions. Votre but est simple : progresser encore et toujours.",
+      "finalDetails": "<p class='caractere'>Selon votre caractère vous pouvez être : </p><span class='carac-titre'>Achiever-Collector</span><p class='carac-desc'>Vous êtes attiré par la thésaurisation de mission ou de collextionnables. Votre but est d’en avoir toujours plus.</p><span class='carac-titre'>Achiever-Expert</span><p class='carac-desc'>Votre but est de maitriser à 100% un ou plusieurs aspects du jeu, que ce soit une stratégie particulière ou l’histoire générale.</p>"  
+        
     },
     "fighter": {
       "label": "Fighter",
-      "final_sentence": "Vous êtes majoritairement 'Fighter', ce que vous recherchez c'est avant tout la confrontation, la possibilité de vous mesurer aux autre pour montrer que vous êtes le meilleur. <br/>Selon votre caractère vous pouvez être 'Fighter-Competitor', votre but alors est de montrer que vous êtes le meilleur tout en restant dansles règles du jeu. Pour vous tricher est l'aveu de faiblesse de ceux qui sont incapables de gagner 'à la régulière'. Vous pouvez également être 'Fighter-Killer'. Votre but est alors de gagner à tout prix, quitte enfreindre les règles ou vous faire des ennemis : seule la vistoire est belle !"
+      "final_sentence": "Vous êtes majoritairement 'Fighter', ce que vous recherchez c'est avant tout la confrontation, la possibilité de vous mesurer aux autre pour montrer que vous êtes le meilleur. <br/>Selon votre caractère vous pouvez être 'Fighter-Competitor', votre but alors est de montrer que vous êtes le meilleur tout en restant dansles règles du jeu. Pour vous tricher est l'aveu de faiblesse de ceux qui sont incapables de gagner 'à la régulière'. Vous pouvez également être 'Fighter-Killer'. Votre but est alors de gagner à tout prix, quitte enfreindre les règles ou vous faire des ennemis : seule la vistoire est belle !",
+      "image_finale": "<img src='/assets/img/fighter.png'/>",
+      "background_image": "<img src='/assets/img/bg_fighter.png'/>",
+      "shape": "/assets/img/shape_fighter.png",
+      "finalIntro": "Ce que vous recherchez c'est avant tout la confrontation, la possibilité de vous mesurer aux autres pour montrer que vous êtes le meilleur.",
+      "finalDetails": "<p class='caractere'>Selon votre caractère vous pouvez être : </p><span class='carac-titre'>Fighter-Competitor</span><p class='carac-desc'>Votre but alors est de montrer que vous êtes le meilleur tout en restant dans les règles du jeu. Pour vous tricher est l'aveu de faiblesse de ceux qui sont incapables de gagner 'à la régulière'.</p><span class='carac-titre'>Fighter-Killer</span><p class='carac-desc'>Votre but est alors de gagner à tout prix, quitte enfreindre les règles ou vous faire des ennemis : seule la vistoire est belle !</p>"  
     },
     "explorer": {
       "label": "Explorer",
-      "final_sentence": "Vous êtes majoritairement 'Explorer', ce qui vous motive dans un jeu c'est la partie de découverte qu'il comporte. Que ce soit dans les jeux physiques ou plus souvent dans les jeux vidéos ce qui vous motive c'est la perspective de vastes univers inexplorés à parcourir. <br/> Selon votre caractère vous pouvez être 'Explorer-Detective' et motivé par la résolution de problèmes sans cesse nouveaux ou 'Explorer-Navigator', motivé par la découverte pure de choses inexplorées."
+      "final_sentence": "Vous êtes majoritairement 'Explorer', ce qui vous motive dans un jeu c'est la partie de découverte qu'il comporte. Que ce soit dans les jeux physiques ou plus souvent dans les jeux vidéos ce qui vous motive c'est la perspective de vastes univers inexplorés à parcourir. <br/> Selon votre caractère vous pouvez être 'Explorer-Detective' et motivé par la résolution de problèmes sans cesse nouveaux ou 'Explorer-Navigator', motivé par la découverte pure de choses inexplorées.",
+      "image_finale": "<img src='/assets/img/explorer.png'/>",
+      "background_image": "<img src='/assets/img/bg_explorer.png'/>",
+      "shape": "/assets/img/shape_explorer.png",
+      "finalIntro": "Ce qui vous motive dans un jeu c'est la partie de découverte qu'il comporte. Que ce soit dans les jeux physiques ou plus souvent dans les jeux vidéos vous aimez la perspective de vastes univers inexplorés à parcourir.",
+      "finalDetails": "<p class='caractere'>Selon votre caractère vous pouvez être : </p><span class='carac-titre'>Explorer-Detective</span><p class='carac-desc'>Vous êtes motivé par la découverte de mystères a éclaircir. Un monde vaste mais sans aucun mystère ne vous intéressera guère.</p><span class='carac-titre'>Explorer-Navigator</span><p class='carac-desc'>Vous recherchez les grands espace et les larges horizons. Plus il y a de choses a découvrir, plus vous êtes heureux !</p>"  
     }
   }
 }

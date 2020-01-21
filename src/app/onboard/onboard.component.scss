@@ -1,3 +1,190 @@
-.app-onboard{
+#content {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
     
+    #background_botleft{
+        bottom: 0px;
+        left:-100px;
+        position: static;
+    }
+}
+
+#background {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+    }
+
+#background::before {
+    content: " ";
+    position: fixed;
+    height: 200px;
+    max-width: 1500px;
+    background: url(/assets/img/Background_BotLeft_crop.png) no-repeat bottom left;
+    width: 1000px;
+    margin-left: -235px;
+    bottom:0px;
+ }
+
+#content::before {
+    content: " ";
+    position: fixed;
+    height: 600px;
+    max-width: 1500px;
+    background: url(/assets/img/Background_TopRight_crop.png) no-repeat top right;
+    width: 1000px;
+    margin-left: 750px;
+    top:0px;
+ }
+
+.mat-drawer-container{
+    overflow:auto;
+}
+
+.app-onboard {
+
+   .logo{
+        position: absolute;
+        width: 200px;
+        height: 43.33px;
+        left: calc(50% - 200px/2 - 11px);
+        top: 51px;
+
+        background: url(/assets/img/Logo_Horizontal.png);
+    }
+    
+   .title-row{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-left: 40px;  
+
+        h1{
+            color: #070636;
+            font-size: 36px;
+            font-weight: normal;
+            font-family: 'Baloo', cursive;
+            margin-top: 200px;
+            margin-bottom: 30px;
+            
+            .span_title{
+               color:#476FBD;
+                font-size: 36px;
+                font-weight: normal;
+                font-family: 'Baloo', cursive;
+            }
+        }
+       
+       
+   }
+
+    .title-row::before{
+        content: "PLAY";
+        position: fixed;
+        margin-left: 0px;
+        top:150px;
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 288px;
+        line-height: 288px;
+        color: rgba(76, 132, 240, 0.06);
+        
+    }
+    
+    .intro_left{
+        width: 670px;
+        max-width: 85%;
+        float:left;
+        display: block;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #888787;
+        margin-bottom: 25px;
+    }
+    
+    .mat-button{
+            color:white;
+            width: 250px;
+            height: 60px;
+            background: #E86A3D;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    .mat-button-wrapper{
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .player_types{
+        width: 150px;
+        display:block;
+        float: left;
+    }
+
+    .type_logo{
+        text-align:center;
+    }
+    .type_desc{
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+
+        color: rgba(76, 132, 240, 0.53);
+    }
+    .type_desc_titre{
+        font-family: Baloo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+
+        color: #4770C0;
+    }
+    
+    .launcher{
+        display:block;
+        float: left;
+        margin-top:20px
+    }
+    
+    .joueurs{
+        width:400px;
+        left: 10px;
+        float: right;
+        position: relative;
+        display: block;
+        top: -50px;
+    }
+    
+    .start{
+        top: 20px;
+        float: right;
+        position: relative;
+        display: block;
+        left: 30%;
+        height :150px;
+        text-align: center;
+        
+        a{
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 21px;
+            color: #4C84F0;
+            text-decoration-line: underline;
+        }
+  
+    }
 }
