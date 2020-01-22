@@ -7,8 +7,6 @@
         max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
-        background-color: white;
-
     
     #background_botleft{
         bottom: 0px;
@@ -21,7 +19,6 @@
         max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
-        background-color: white;
     }
 
 #background::before {
@@ -259,6 +256,8 @@
                 font-size: 18px;
                 text-align: center;
                 color: #4770C0;
+                padding-bottom: 20px;
+                padding-left:6%;
         }
         
         .result_droit{
@@ -378,16 +377,26 @@
         
         .row-bg{
             z-index: auto;
+            img{float:left!important;}
         }
         
+        .container-shape{
+            position:relative;
+            font-family: Baloo;
+            font-size: 18px;
+            line-height: 28px;
+            color: #4770C0;
+            padding: 12px 0 12px 0;
+            float: left;
+        }
         .percentage{
             text-align: center;
-            top: 32px;
+            top: 28px;
             font-size: 40px;
             line-height: 63px;
             font-family: Baloo; 
             color: #FFFFFF;
-            padding-left: 28%;
+            padding-left: 6%;
             position: absolute;
         }
         
@@ -401,15 +410,12 @@
         .shape-bg{opacity: 0.5;
         }
         .shape-color{
-            //margin-top: -55px;
             width:85px;
         }
         
         .shape-crop{
             position: absolute;
-            left: 61px;
             mix-blend-mode: normal;
-            bottom: 39px;
             overflow: hidden;
         }
         
@@ -442,12 +448,13 @@
             text-decoration-line: underline;
             color: #4C84F0;
             margin-top:20px;
+            margin-bottom:40px;
         }
         
         .again{
-            bottom: -19%;
-            left: 39%;
-            width: 250px;
+            bottom: -125px;
+            left: 0%;
+            width: 100%;
             position: absolute;
         }
         .bouton-again{
@@ -479,7 +486,10 @@
             line-height: 18px;
             text-align: center;
             padding: 23px;
-            margin-bottom: 20px
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgba(255,255,255,0.6);
         }
         
          .bouton-contact:hover{
@@ -503,16 +513,45 @@
         #content::before {
             opacity: 0.2;
         }
-
        
     }
 @media (max-width: 992px)
     {
-
+        .result_gauche{
+                padding-left:3%!important;
+        }
+       
 }
 @media (max-width: 768px)
     {
 
+        .result_gauche{
+                width: 100%!important;
+        }
+        .container-shape{
+            padding: 12px 5% 12px 5%!important;
+        }
+        .result_gauche{
+                padding-left:22%!important;
+        }
+        .final-image img{
+            width:150px;
+        }
+        .annonce{
+            margin-top:40px!important
+        }
+        .result_droit{
+            padding-left: 10%!important;
+            padding-right: 10%!important;
+            width:100%!important;
+            text-align: center!important;
+        }
+        .carac-desc{
+            padding-left: 0px!important;
+        }
+        .mat-radio-label-content{
+            font-size: 16px!important;
+        }
 }
 
 
@@ -525,8 +564,48 @@
                 margin-left: auto!important;
                 margin-right: auto!important;
         }
+        .result_gauche{
+                padding-left:21%!important;
+        }
+        .final-image {
+            width:100%;
+        }
+        .annonce{
+            margin-left:0px!important;
+            width:100%!important;
+            margin-top:0px!important
+        }
+        .final-result{
+            width:100%!important;
+            margin-left:0px!important;
+            text-align: center!important;
+        }
+        .bouton-contact{
+        font-size: 14px!important;
+        }
+        .more{
+            font-size: 16px!important;
+        }
+        .background-image{
+            width:100%;
+            overflow:hidden;
+        }
 }
 @media (max-width: 400px)
     {
-
+        .row-bg img{
+            width:65px!important;
+        }
+        .shape-color{
+            width: 65px!important;
+            clip-path:none!important;
+        }
+        .percentage{
+            top: 19px!important;
+            padding-left: 9%!important;
+            font-size: 30px!important;
+        }
+        .result_gauche {
+            padding-left:10%!important;
+        }
 }

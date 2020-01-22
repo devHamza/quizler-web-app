@@ -3,7 +3,7 @@
 
         <div class="app-home container">
 
-            <div class="logo"></div>
+            <a href="http://www.bewizyu.com"><div class="logo"></div></a>
        
             <div class="header-section">
                 <div class="row">
@@ -63,7 +63,24 @@
 
                         <mat-card class="results" *ngIf="showResults">
                             <div class="result_gauche">
-                                    <table class="table">
+                                    <div class="container-shape" *ngFor="let factor of data; let i = index;">
+                                            <div class="row-bg">
+                                                    <img src={{factor.result_shape}} class="shape-bg"/>
+                                                    <div class="shape-crop">
+                                                        <img src={{factor.result_shape}} class="shape-color" [ngStyle]="{'clip-path': 'inset(' + (85 - factor.pourcent) + 'px 0px 0px 0px)'}" />                  
+                                                    </div>    
+                                            </div>    
+                                                    {{factor.name}}
+                                                <br/>
+                                                <div class="percentage">
+                                                    {{factor.pourcent}}%
+                                                </div> 
+                                
+                                    </div>
+                                
+                                
+                                
+                                    <!--<table class="table">
                                         <tbody>
                                             <tr *ngFor="let factor of data; let i = index;">
                                                 <th scope="row">
@@ -81,7 +98,7 @@
                                                 </th>
                                             </tr>
                                         </tbody>
-                                    </table>
+                                    </table>-->
                                     <div class="background-image" [innerHTML]="back"></div> 
                             </div>
                             <div class="header-result">
