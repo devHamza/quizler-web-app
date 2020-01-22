@@ -27,6 +27,7 @@
     width: 1000px;
     margin-left: -235px;
     bottom:0px;
+    z-index: -1;
  }
 
 #content::before {
@@ -96,7 +97,7 @@
     
     .intro_left{
         width: 670px;
-        max-width: 85%;
+        max-width: 90%;
         float:left;
         display: block;
         font-family: Roboto;
@@ -106,6 +107,7 @@
         line-height: 21px;
         color: #888787;
         margin-bottom: 25px;
+        padding-left:40px;
     }
     
     .mat-button{
@@ -187,4 +189,93 @@
         }
   
     }
+}
+
+@media (max-width:1200px)
+    {
+        #background::before {
+            opacity: 0.2;
+        }
+        #content::before {
+            opacity: 0.2;
+        }
+        .joueurs{
+            width:27%!important;
+            img{width:100%}
+        }
+        .start{
+            left: 2%!important;
+        }
+    }
+
+@media (max-width: 992px)
+    {
+        .joueurs{
+            display:none!important;
+        }                
+        .start{
+            float: left!important;
+        }
+       .start{
+            left: 20%!important;
+        }
+        .container-player-types{
+            margin-left: 15%;
+            width:60%;
+        }
+        .player_types{
+            margin-bottom: 30px;
+        }
+        .type_desc_titre{
+            margin-bottom: 0px;
+        }
+}
+@media (max-width: 768px)
+    {
+        .player_types{
+            margin-left:5%
+        }
+        .container-player-types{
+            margin-left: 5%;
+            width:auto;
+        }
+}
+
+
+@media (max-width: 576px)
+    {
+        .mat-button{
+            width:200px!important;
+        }
+        .mat-button-wrapper{    
+            font-size: 14px!important;
+        }
+        .player_types {
+            width:30%!important;
+            min-width: 100px;
+        }
+        .container-player-types{
+            margin-left:5%
+        }
+}
+@media (max-width: 400px)
+    {
+        .container-player-types{
+            width:100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .player_types {
+            margin-left: auto;
+            margin-right: auto;
+            float:none!important;
+            
+        }
+        .start{
+            width:200px;
+            margin-left: auto;
+            margin-right: auto;
+            //left: 15%!important;
+
+        }
 }
