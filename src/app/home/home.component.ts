@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import * as _ from 'lodash';
+import { MatStepper } from '@angular/material/stepper';
 
 @Component({
   selector: 'app-home',
@@ -14,14 +15,14 @@ export class HomeComponent implements OnInit {
 
   view: any[] = [];
   finalSentence = '';
-  typeJoueur ='';
-  img='';
-  back='';
-  shape='';
-  finalInt='';
-  finalDet='';
-  hauteur='';
-  marge='';
+  typeJoueur = '';
+  img = '';
+  back = '';
+  shape = '';
+  finalInt = '';
+  finalDet = '';
+  hauteur = '';
+  marge = '';
   pourcentage = 0;
   progressPercent = 0;
   currentQuestionIndex = 1;
@@ -52,8 +53,23 @@ export class HomeComponent implements OnInit {
     return true;
   }
 
+  goForward(stepper: MatStepper, ev: any, index: number) {
+    if (ev.source.checked) {
+      if (index === this.questionsData.questions.length - 1) {
+        setTimeout(() => {
+          this.calculateResults();
+        }, 300);
+      } else {
+        setTimeout(() => {
+          stepper.next();
+        }, 300);
+      }
+
+    }
+  }
+
   stepperChange(ev) {
-    this.progressPercent = ev.selectedIndex * 100 / this.questionsData.questions.length;
+    this.progressPercent = ev.selectedIndex * 100 / (this.questionsData.questions.length - 1);
     this.currentQuestionIndex = ev.selectedIndex < this.questionsData.questions.length ?
       ev.selectedIndex + 1 : this.questionsData.questions.length;
   }
@@ -84,15 +100,15 @@ export class HomeComponent implements OnInit {
     const resultKeys = _.keys(this.questionsData.factors);
     this.data = [];
     this.finalSentence = '';
-    this.typeJoueur ='';
-    this.img='';
-    this.shape='';
-    this.back='';
-    this.finalDet='';
-    this.finalInt='';  
+    this.typeJoueur = '';
+    this.img = '';
+    this.shape = '';
+    this.back = '';
+    this.finalDet = '';
+    this.finalInt = '';
     this.pourcentage = 0;
     this.hauteur = '';
-    this.marge='';
+    this.marge = '';
     for (const key of resultKeys) {
       this.data.push({
         name: this.questionsData.factors[key].label,
@@ -101,13 +117,13 @@ export class HomeComponent implements OnInit {
         sentence: this.questionsData.factors[key].final_sentence,
         joueur: this.questionsData.factors[key].label,
         image: this.questionsData.factors[key].image_finale,
-        pourcent: Math.round((!!result[key] && result[key] > 0 ? result[key] : 0)/16*100),
+        pourcent: Math.round((!!result[key] && result[key] > 0 ? result[key] : 0) / 16 * 100),
         background: this.questionsData.factors[key].background_image,
         result_shape: this.questionsData.factors[key].shape,
         finalIntro: this.questionsData.factors[key].finalIntro,
         finalDetails: this.questionsData.factors[key].finalDetails,
-        marge: ((Math.round((!!result[key] && result[key] > 0 ? result[key] : 0)/16))*85)-85,
-        hauteur: (Math.round((!!result[key] && result[key] > 0 ? result[key] : 0)/16))*85
+        marge: ((Math.round((!!result[key] && result[key] > 0 ? result[key] : 0) / 16)) * 85) - 85,
+        hauteur: (Math.round((!!result[key] && result[key] > 0 ? result[key] : 0) / 16)) * 85
       });
     }
 

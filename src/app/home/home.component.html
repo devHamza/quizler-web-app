@@ -32,7 +32,7 @@
 
                                         <div *ngIf="!q.multiple_answers">
                                             <mat-radio-group [(ngModel)]="q.selectedAnswer">
-                                                <mat-radio-button *ngFor="let answer of q.answers" [value]="answer">
+                                                <mat-radio-button *ngFor="let answer of q.answers" [value]="answer" (change)="goForward(stepper, $event, i)">
                                                     {{answer.label}}
                                                 </mat-radio-button>
                                             </mat-radio-group>
@@ -40,23 +40,11 @@
                                         <div class="stepperNext">
                                             <button mat-stroked-button matStepperPrevious
                                                 [hidden]="i == 0">Précédent</button>
-                                            <button mat-stroked-button matStepperNext color="primary" [disabled]="isNextStepDisabled(i)">Suivant</button>
+                                            <button [hidden]="i == questionsData.questions.length - 1" mat-stroked-button matStepperNext color="primary" [disabled]="isNextStepDisabled(i)">Suivant</button>
                                         </div>
                                     </div>
                                 </mat-step>
 
-                                <mat-step>
-
-                                    <div class="last-step">
-                                        <mat-icon>check_circle_outline</mat-icon>
-                                        <h2>Vous avez terminé ! </h2>
-                                    </div>
-                                    <div class="stepperNext">
-                                        <button mat-stroked-button matStepperPrevious>Précédent</button>
-                                        <button mat-stroked-button (click)="calculateResults()" color="primary">Voir les
-                                            resultats</button>
-                                    </div>
-                                </mat-step>
                             </mat-horizontal-stepper>
                         </mat-card>
 
