@@ -457,6 +457,10 @@
             width: 100%;
             position: absolute;
         }
+        
+        .again a:hover{
+           text-decoration: none!important; 
+        }
         .bouton-again{
             font-family: Josefin Sans;
             font-size: 18px;

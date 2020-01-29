@@ -1,58 +1,11 @@
 ﻿{
   "quiz_title": "TYPOLOGIE DES <span class='span_title'>JOUEURS</span>",
-  "quiz_description": "Ce test est inspiré des <a href='http://mud.co.uk/richard/hcds.htm'>études</a> de Richard Bartle sur les types de joueurs. Selon lui, les joueurs se divisent en 4 groupes en fonction de ce qui les motive dans le jeu.",
+  "quiz_description": "Ce test est inspiré des études de Richard Bartle sur les types de joueurs. Selon lui, les joueurs se divisent en 4 groupes en fonction de ce qui les motive dans le jeu.",
   "quiz_laucher": "Nous sommes tous un savant mélange de ces 4 types de joueurs. Les questions qui suivent vous permettront de découvrir quel est votre type prédominant.",
   "allow_stepper_navigation": false,
   "questions": [
-    {
-      "question": "Vous aimez à gagner :",
-      "multiple_answers": false,
-      "answers": [
-        {
-          "label": "Pour prouver que c'est moi le meilleur",
-          "factors": [
-            {
-              "id": "fighter",
-              "weigth": 1
-            }
-          ]
-        },
-        {
-          "label": "Uniquement s'il y a quelque chose à gagner",
-          "factors": [
-            {
-              "id": "achiever",
-              "weigth": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "question": "Dans votre sport favori vous réalisez un exploit (geste technique, record battu...) ",
-      "multiple_answers": false,
-      "answers": [
-        {
-          "label": "Dommage que je sois seul, j'aurais aimé le partager !",
-          "factors": [
-            {
-              "id": "socializer",
-              "weigth": 1
-            }
-          ]
-        },
-        {
-          "label": "Génial, cela veut dire que je progresse !",
-          "factors": [
-            {
-              "id": "achiever",
-              "weigth": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
+  
+     {
       "question": "Si vous organisez une soirée jeux de société votre but est :",
       "multiple_answers": false,
       "answers": [
@@ -95,11 +48,11 @@
       ]
     },
     {
-      "question": "Quels jeux sont installés sur votre téléphone ?",
+      "question": "Dans votre sport favori vous réalisez un exploit (geste technique, record battu...) ",
       "multiple_answers": false,
       "answers": [
         {
-          "label": "Ceux pour lesquels j'ai reçu des invitations ou qui me permettent de jouer avec des amis",
+          "label": "Dommage que je sois seul, j'aurais aimé le partager !",
           "factors": [
             {
               "id": "socializer",
@@ -108,7 +61,31 @@
           ]
         },
         {
-          "label": "Des jeux inconnus que je fais découvrir à mes amis",
+          "label": "Génial, cela veut dire que je progresse !",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Quels jeux sont installés sur votre téléphone ?",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Ceux qui me permettent de jouer avec des amis",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Des jeux inconnus que je découvre seul",
           "factors": [
             {
               "id": "explorer",
@@ -123,7 +100,7 @@
       "multiple_answers": false,
       "answers": [
         {
-          "label": "Le convaincre qu'il ferait mieux de s'allier avec moi s'il veut gagner",
+          "label": "Le convaincre de revenir dans mon équipe s'il veut gagner",
           "factors": [
             {
               "id": "socializer",
@@ -143,11 +120,35 @@
       ]
     },
     {
+      "question": "Mon but est de gagner :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Tout simplement pour montrer que je suis le meilleur",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Parce qu'en général il y a un enjeu qui m'intéresse",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
       "question": "Dans un escape game vous êtes celui qui",
       "multiple_answers": false,
       "answers": [
         {
-          "label": "Explore les moindre recoins de la salle pour trouver les éléments du jeu",
+          "label": "Explore les moindres recoins de la salle pour trouver les éléments du jeu",
           "factors": [
             {
               "id": "explorer",
@@ -209,11 +210,35 @@
       ]
     },
     {
+      "question": "Dans un monde idéal, vous préfèreriez être :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Célèbre",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Riche",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
       "question": "Votre citation préférée :",
       "multiple_answers": false,
       "answers": [
         {
-          "label": "\"Qu'ils me haïssent, pourvu qu'ils me craignent\"",
+          "label": "\"Qu'ils me haïssent, pourvu qu'ils me craignent\" (Caligula)",
           "factors": [
             {
               "id": "fighter",
@@ -222,7 +247,7 @@
           ]
         },
         {
-          "label": "\"Un pour tous, tous pour un\"",
+          "label": "\"Un pour tous, tous pour un\" (Edmond Rostand)",
           "factors": [
             {
               "id": "socializer",
@@ -275,6 +300,30 @@
       ]
     },
     {
+      "question": "Dans un jeu vidéo, vous êtes plus intéressé par :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "La qualité de votre équpement",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Le nombre d'ennemi que vous avez terrassé",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
       "question": "Lors d'un jeu de société vous sentez que vous risquez de perdre la partie, quelle est votre réaction :",
       "multiple_answers": false,
       "answers": [
@@ -299,11 +348,11 @@
       ]
     },
     {
-      "question": "Si vous devez choisir un jeu en ligne sur lequel jouer, vous en choisiriez un :",
+      "question": "Si vous devez choisir un jeu en ligne, ce serait plutôt :",
       "multiple_answers": false,
       "answers": [
         {
-          "label": "Avec des missions variées et intéressantes.",
+          "label": "Un jeu proposant des missions variées et intéressantes.",
           "factors": [
             {
               "id": "explorer",
@@ -312,7 +361,7 @@
           ]
         },
         {
-          "label": "Avec une grande communauté pour rencontrer du monde.",
+          "label": "Un jeu ayant une grande communauté pour rencontrer du monde.",
           "factors": [
             {
               "id": "socializer",
@@ -323,11 +372,11 @@
       ]
     },
     {
-      "question": "Vos amis vous conaissent comme étant :",
+      "question": "Vous êtes plutôt :",
       "multiple_answers": false,
       "answers": [
         {
-          "label": "Celui qui gagne tout le temps.",
+          "label": "Celui qui gagne tout le temps, quel que soit le jeu.",
           "factors": [
             {
               "id": "fighter",
@@ -346,6 +395,30 @@
         }
       ]
     },
+    {
+      "question": "Vous auriez aimé être",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Une star mondialement connue comme Brad Pitt",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Un explorateur comme Christophe Colomb",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },    
     {
       "question": "Pour vous quel est l'avantage des jeux vidéos par rapport aux jeux de plateau ?",
       "multiple_answers": false,
@@ -382,6 +455,30 @@
           "factors": [
             {
               "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "question": "Dans un jeu vous avez plus de plaisir a remporter",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Un Duel",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Un Quizz",
+          "factors": [
+            {
+              "id": "explorer",
               "weigth": 1
             }
           ]
@@ -430,6 +527,54 @@
           "factors": [
             {
               "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous jouez avec des amis à votre jeu favori. Une personne n'ayant jamais joué veut se joindre à vous",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Intéressant, je vais pouvoir lui apprendre les ficelles du jeu...",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Chic, une proie façile !",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous préférez",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Posséder des choses que personne d'autre ne possède",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Savoir des choses que personne d'autre ne sait",
+          "factors": [
+            {
+              "id": "explorer",
               "weigth": 1
             }
           ]
