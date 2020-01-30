@@ -54,6 +54,7 @@
         top: 51px;
 
         background: url(/assets/img/Logo_Horizontal.png);
+        background-size: contain;
     }
     
    .title-row{
@@ -232,6 +233,14 @@
                 margin-left: 10px;
                 font-weight: bold;
             }
+            button{
+                border-radius: 50px!important;
+                min-width: Opx!important;
+                font-size: 24px;
+                color: #3e82f8;
+            }
+
+            
 
         }
         .last-step{
@@ -318,7 +327,7 @@
         }
         
         .intro{
-            font-family: Roboto Medium;
+            font-family: Roboto;
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
@@ -591,9 +600,9 @@
             margin-left:0px!important;
             text-align: center!important;
         }
-        .bouton-contact{
+        /*.bouton-contact{
         font-size: 14px!important;
-        }
+        }*/
         .more{
             font-size: 16px!important;
         }
