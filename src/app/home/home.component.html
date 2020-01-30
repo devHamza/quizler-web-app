@@ -38,9 +38,9 @@
                                             </mat-radio-group>
                                         </div>
                                         <div class="stepperNext">
-                                            <button mat-stroked-button matStepperPrevious
-                                                [hidden]="i == 0">&#8249;</button>
-                                            <button [hidden]="i == questionsData.questions.length - 1" mat-stroked-button matStepperNext color="primary" [disabled]="isNextStepDisabled(i)">&#8250;</button>
+                                            <button  matStepperPrevious
+                                                [hidden]="i == 0" class="arrow left"></button>
+                                            <button [hidden]="i == questionsData.questions.length - 1"  matStepperNext color="primary" [disabled]="isNextStepDisabled(i)" class="arrow right"></button>
                                         </div>
                                     </div>
                                 </mat-step>

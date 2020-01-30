@@ -227,17 +227,24 @@
             }
         
         .stepperNext{
+            display:none;
             padding-top: 20px;
             text-align: right;
+            padding-right: 3%;
             .mat-stroked-button{
                 margin-left: 10px;
                 font-weight: bold;
+                
             }
             button{
-                border-radius: 50px!important;
+                border-radius: 1px!important;
                 min-width: Opx!important;
                 font-size: 24px;
                 color: #3e82f8;
+                
+            }
+            button:hover{
+                color:black;
             }
 
             
@@ -251,6 +258,36 @@
             text-align: center;
         }
     }
+    
+    .arrow {
+	margin-right: 10px;
+    width: 3vmin;
+    height: 3vmin;
+    background: transparent;
+    border-top: 0.7vmin solid #3e82f8 !important;
+    border-right: 0.7vmin solid #3e82f8 !important;
+    border-left:none!important;
+    border-bottom: none!important;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+	
+	&.left {
+		left: 0;
+		transform: translate3d(0,-50%,0) rotate(-135deg);
+	}
+
+	&.right {
+		right: 0;
+		transform: translate3d(0,-50%,0) rotate(45deg);
+	}
+	
+	&:hover {
+		border-color: orange!important;
+		box-shadow: 0.5vmin -0.5vmin 0 #3e82f8;
+	}
+	
+
+}
 
 
     .results{
