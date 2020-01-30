@@ -1,0 +1,648 @@
+﻿{
+  "quiz_title": "TYPOLOGIE DES <span class='span_title'>JOUEURS</span>",
+  "quiz_description": "Ce test est inspiré des études de Richard Bartle sur les types de joueurs. Selon lui, les joueurs se divisent en 4 groupes en fonction de ce qui les motive dans le jeu.",
+  "quiz_laucher": "Nous sommes tous un savant mélange de ces 4 types de joueurs. Les questions qui suivent vous permettront de découvrir quel est votre type prédominant.",
+  "allow_stepper_navigation": false,
+  "questions": [
+  
+     {
+      "question": "Si vous organisez une soirée jeux de société votre but est :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Que tout le monde passe une soirée agréable",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Découvrir de nouveaux jeux",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Voir qui est le meilleur",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Parfaire votre stratégie sur vos jeux favoris",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }  
+      ]
+    },
+    {
+      "question": "Dans votre sport favori vous réalisez un exploit (geste technique, record battu...) ",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Dommage que je sois seul, j'aurais aimé le partager !",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Génial, cela veut dire que je progresse !",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Quels jeux sont installés sur votre téléphone ?",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Ceux qui me permettent de jouer avec des amis",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Des jeux inconnus que je découvre seul",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Durant une partie, un de vos coéquipier vous trahit. Vous décidez de :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Le convaincre de revenir dans mon équipe s'il veut gagner",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Me venger, quitte a perdre... il perdra aussi",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Mon but est de gagner :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Tout simplement pour montrer que je suis le meilleur",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Parce qu'en général il y a un enjeu qui m'intéresse",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Dans un escape game vous êtes celui qui",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Explore les moindres recoins de la salle pour trouver les éléments du jeu",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Se tient au milieu pour résoudre les énigmes",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Qu'est ce qui vous motive dans la pratique d'un sport ?",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Avoir une progression constante et le maitriser de plus en plus",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Partager des moments forts avec d'autres personnes",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "La possibilité de se mesurer aux autres",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Découvrir sans cesse de nouvelles subtilités du jeu",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Dans un monde idéal, vous préfèreriez être :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Célèbre",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Riche",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Votre citation préférée :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "\"Qu'ils me haïssent, pourvu qu'ils me craignent\" (Caligula)",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "\"Un pour tous, tous pour un\" (Edmond Rostand)",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous venez d'acheter un nouveau jeu de société :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "J'invite des amis pour qu'on le découvre ensemble",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Je m'entraîne pour avoir une longueur d'avance lors de la première partie",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Je lis en détail les règles pour être sûr de ne rater aucune subtilité du jeu",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        },      
+        {
+          "label": "\"Super ! Un de plus a découvrir !\"",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Dans un jeu vidéo, vous êtes plus intéressé par :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "La qualité de votre équpement",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Le nombre d'ennemi que vous avez terrassé",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Lors d'un jeu de société vous sentez que vous risquez de perdre la partie, quelle est votre réaction :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Je triche : L'important c'est de gagner",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "C'est l'occasion idéale de tester cette nouvelle stratégie que j'ai imaginé",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Si vous devez choisir un jeu en ligne, ce serait plutôt :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Un jeu proposant des missions variées et intéressantes.",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Un jeu ayant une grande communauté pour rencontrer du monde.",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous êtes plutôt :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Celui qui gagne tout le temps, quel que soit le jeu.",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Celui qui connaît le plus grand nombre de jeux et en découvre sans cesse de nouveaux.",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous auriez aimé être",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Une star mondialement connue comme Brad Pitt",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Un explorateur comme Christophe Colomb",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },    
+    {
+      "question": "Pour vous quel est l'avantage des jeux vidéos par rapport aux jeux de plateau ?",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "La possibilité d'explorer de vastes univers.",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "La possiblité de jouer avec un grand nombre de personne.",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "La possibilité de se mesurer à plus de monde.",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "La possiblilité d'évoluer dans un univers aux infinies possibilités.",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "question": "Dans un jeu vous avez plus de plaisir a remporter",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Un Duel",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Un Quizz",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous avez choisi votre nouveau jeu de société",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Parce que tout le monde y joue, ce sera plus simple pour organiser des soirées.",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Parce que personne ne le connaît, vous aimez découvrir les jeux avant tout le monde.",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Dans un MMORPG (jeu massivement multijoueur), vous préférez être connu comme :",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Celui qui connaît la carte par coeur.",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Celui qui a accompli toutes les quêtes.",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous jouez avec des amis à votre jeu favori. Une personne n'ayant jamais joué veut se joindre à vous",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Intéressant, je vais pouvoir lui apprendre les ficelles du jeu...",
+          "factors": [
+            {
+              "id": "socializer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Chic, une proie façile !",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous préférez",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "Posséder des choses que personne d'autre ne possède",
+          "factors": [
+            {
+              "id": "achiever",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "Savoir des choses que personne d'autre ne sait",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Vous vous retrouvez seul sur un jeu en réseau..",
+      "multiple_answers": false,
+      "answers": [
+        {
+          "label": "\"C'est le moment idéal pour explorer la carte dans ses moindres détails\"",
+          "factors": [
+            {
+              "id": "explorer",
+              "weigth": 1
+            }
+          ]
+        },
+        {
+          "label": "\"Aucun intérêt, il n'y a personne a qui se mesurer\"",
+          "factors": [
+            {
+              "id": "fighter",
+              "weigth": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "factors": {
+    "socializer": {
+      "label": "Socializer",
+      "final_sentence": "Vous êtes majoritairement 'Socializer', ce que vous recherchez dans le jeu c'est avant tout l'aventure humaine qui la compose. Que ce soit dans les jeux vidéos, les jeux de société ou le sport, ce qui vous intéresse ce sont les interactions avec vos partenaires ou adversaires. <br/>Selon votre caractère vous pouvez être 'Socializer-Rockstar' et motivé par la reconaissance des autres ou 'Socializer-Coach', motivé par la possiblité d'aider vos condisciples.",
+      "image_finale": "<img src='/assets/img/socializer.png'/>",
+      "background_image": "<img src='/assets/img/bg_socializer.png'/>",
+      "shape": "/assets/img/shape_socializer.png",
+      "finalIntro": "Ce que vous recherchez dans le jeu c'est avant tout l'aventure humaine qui la compose. Que ce soit dans les jeux vidéos, les jeux de société ou le sport, ce qui vous intéresse ce sont les interactions avec vos partenaires ou adversaires.",
+      "finalDetails": "<p class='caractere'>Selon votre caractère vous pouvez être : </p> <span class='carac-titre'>Socializer-Rockstar</span><p class='carac-desc'>Vous êtes motivé par la reconnaissance des autres joueurs. Votre but ? Être connu et reconnu !</p><span class='carac-titre'>Socializer-Coach</span><p class='carac-desc'>Vous ne cherchez pas à être connu mais plutôt à aider les autres joueurs. Votre nature altruiste s’exprime pleinenemnt, même dans les jeux...</p>"    
+    },
+    "achiever": {
+      "label": "Achiever",
+      "final_sentence": "Vous êtes majoritairement 'Achiever', ce qui vous motive dans le jeu est principalement la possibilité de progresser. Que ce soit en maitrisant de nouvelle techniques, de nouvelles stratégies ou tout simplement en accomplissant des missions. Votre but est simple : progresser encore et toujours. <br/>Selon votre caractère vous pouvez être 'Achiever-Collector' et motivé par la thésaurisation de mission ou de collectionnables ou 'Achiever-Expert', motivé par la possibilité de maitriser à 100% un ou plusieurs points du jeu.",
+      "image_finale": "<img src='/assets/img/achiever.png'/>",
+      "background_image": "<img src='/assets/img/bg_achiever.png'/>",
+      "shape": "/assets/img/shape_achiever.png",
+      "finalIntro": "Ce qui vous motive c’est la possibilité de progresser. Que ce soit en maitrisant de nouvelle techniques ou tout simplement en accomplissant des missions. Votre but est simple : progresser encore et toujours.",
+      "finalDetails": "<p class='caractere'>Selon votre caractère vous pouvez être : </p><span class='carac-titre'>Achiever-Collector</span><p class='carac-desc'>Vous êtes attiré par la thésaurisation de mission ou de collextionnables. Votre but est d’en avoir toujours plus.</p><span class='carac-titre'>Achiever-Expert</span><p class='carac-desc'>Votre but est de maitriser à 100% un ou plusieurs aspects du jeu, que ce soit une stratégie particulière ou l’histoire générale.</p>"  
+        
+    },
+    "fighter": {
+      "label": "Fighter",
+      "final_sentence": "Vous êtes majoritairement 'Fighter', ce que vous recherchez c'est avant tout la confrontation, la possibilité de vous mesurer aux autre pour montrer que vous êtes le meilleur. <br/>Selon votre caractère vous pouvez être 'Fighter-Competitor', votre but alors est de montrer que vous êtes le meilleur tout en restant dansles règles du jeu. Pour vous tricher est l'aveu de faiblesse de ceux qui sont incapables de gagner 'à la régulière'. Vous pouvez également être 'Fighter-Killer'. Votre but est alors de gagner à tout prix, quitte enfreindre les règles ou vous faire des ennemis : seule la vistoire est belle !",
+      "image_finale": "<img src='/assets/img/fighter.png'/>",
+      "background_image": "<img src='/assets/img/bg_fighter.png'/>",
+      "shape": "/assets/img/shape_fighter.png",
+      "finalIntro": "Ce que vous recherchez c'est avant tout la confrontation, la possibilité de vous mesurer aux autres pour montrer que vous êtes le meilleur.",
+      "finalDetails": "<p class='caractere'>Selon votre caractère vous pouvez être : </p><span class='carac-titre'>Fighter-Competitor</span><p class='carac-desc'>Votre but alors est de montrer que vous êtes le meilleur tout en restant dans les règles du jeu. Pour vous tricher est l'aveu de faiblesse de ceux qui sont incapables de gagner 'à la régulière'.</p><span class='carac-titre'>Fighter-Killer</span><p class='carac-desc'>Votre but est alors de gagner à tout prix, quitte enfreindre les règles ou vous faire des ennemis : seule la vistoire est belle !</p>"  
+    },
+    "explorer": {
+      "label": "Explorer",
+      "final_sentence": "Vous êtes majoritairement 'Explorer', ce qui vous motive dans un jeu c'est la partie de découverte qu'il comporte. Que ce soit dans les jeux physiques ou plus souvent dans les jeux vidéos ce qui vous motive c'est la perspective de vastes univers inexplorés à parcourir. <br/> Selon votre caractère vous pouvez être 'Explorer-Detective' et motivé par la résolution de problèmes sans cesse nouveaux ou 'Explorer-Navigator', motivé par la découverte pure de choses inexplorées.",
+      "image_finale": "<img src='/assets/img/explorer.png'/>",
+      "background_image": "<img src='/assets/img/bg_explorer.png'/>",
+      "shape": "/assets/img/shape_explorer.png",
+      "finalIntro": "Ce qui vous motive dans un jeu c'est la partie de découverte qu'il comporte. Que ce soit dans les jeux physiques ou plus souvent dans les jeux vidéos vous aimez la perspective de vastes univers inexplorés à parcourir.",
+      "finalDetails": "<p class='caractere'>Selon votre caractère vous pouvez être : </p><span class='carac-titre'>Explorer-Detective</span><p class='carac-desc'>Vous êtes motivé par la découverte de mystères a éclaircir. Un monde vaste mais sans aucun mystère ne vous intéressera guère.</p><span class='carac-titre'>Explorer-Navigator</span><p class='carac-desc'>Vous recherchez les grands espace et les larges horizons. Plus il y a de choses a découvrir, plus vous êtes heureux !</p>"  
+    }
+  }
+}
