@@ -76,6 +76,7 @@ export class HomeComponent implements OnInit {
 
   calculateResults() {
     let selectedFactors = [];
+    const firebaseData = [];
     for (const question of this.questionsData.questions) {
       if (!!question.selectedAnswer) {
         selectedFactors = selectedFactors.concat(question.selectedAnswer.factors);
@@ -143,5 +144,32 @@ export class HomeComponent implements OnInit {
 
   reset() {
     window.location.reload();
+  }
+
+  fbShare() {
+    FB.ui({
+      method: 'share',
+      href: 'https://typologie-joueurs.firebaseapp.com',
+      quote: `Moi je suis ${this.data[0].joueur} à ${this.data[0].pourcent}% et vous ?`
+      // quote: `Moi je suis XXXX à XX%, et vous ?`
+    }, (response) => {
+      console.log('FACEBOOK RESPONSE: ', response);
+    });
+
+    // using feed dialog...
+    // FB.ui({
+    //   method: 'feed',
+    //   link: 'https://typologie-joueurs.firebaseapp.com',
+    //   caption: `Moi je suis Socializer a 38%`,
+    //   description: 'Description here',
+    //   actions: [
+    //     {
+    //       name: 'Try it',
+    //       link: 'https://typologie-joueurs.firebaseapp.com'
+    //     }
+    //   ]
+    // }, (response) => {
+    //   console.log('FACEBOOK RESPONSE: ', response);
+    // });
   }
 }

@@ -4,7 +4,7 @@
         <div class="app-home container">
 
             <a href="http://www.bewizyu.com"><div class="logo"></div></a>
-       
+
             <div class="header-section">
                 <div class="row">
                     <div class="col">
@@ -55,19 +55,19 @@
                                             <div class="row-bg">
                                                     <img src={{factor.result_shape}} class="shape-bg"/>
                                                     <div class="shape-crop">
-                                                        <img src={{factor.result_shape}} class="shape-color" [ngStyle]="{'clip-path': 'inset(' + (85 - factor.pourcent) + 'px 0px 0px 0px)'}" />                  
-                                                    </div>    
-                                            </div>    
+                                                        <img src={{factor.result_shape}} class="shape-color" [ngStyle]="{'clip-path': 'inset(' + (85 - factor.pourcent) + 'px 0px 0px 0px)'}" />
+                                                    </div>
+                                            </div>
                                                     {{factor.name}}
                                                 <br/>
                                                 <div class="percentage">
                                                     {{factor.pourcent}}%
-                                                </div> 
-                                
+                                                </div>
+
                                     </div>
-                                
-                                
-                                
+
+
+
                                     <!--<table class="table">
                                         <tbody>
                                             <tr *ngFor="let factor of data; let i = index;">
@@ -75,26 +75,26 @@
                                                 <div class="row-bg">
                                                     <img src={{factor.result_shape}} class="shape-bg"/>
                                                     <div class="shape-crop">
-                                                        <img src={{factor.result_shape}} class="shape-color" [ngStyle]="{'clip-path': 'inset(' + (85 - factor.pourcent) + 'px 0px 0px 0px)'}" />                  
-                                                    </div>    
-                                                </div>    
+                                                        <img src={{factor.result_shape}} class="shape-color" [ngStyle]="{'clip-path': 'inset(' + (85 - factor.pourcent) + 'px 0px 0px 0px)'}" />
+                                                    </div>
+                                                </div>
                                                     {{factor.name}}
                                                 <br/>
                                                 <div class="percentage">
                                                     {{factor.pourcent}}%
-                                                </div>    
+                                                </div>
                                                 </th>
                                             </tr>
                                         </tbody>
                                     </table>-->
-                                    <div class="background-image" [innerHTML]="back"></div> 
+                                    <div class="background-image" [innerHTML]="back"></div>
                             </div>
                             <div class="header-result">
                                 <div class="final-image" [innerHTML]="img"></div>
                                 <!--<img src="/assets/img/">-->
                                 <span class="annonce">Vous êtes majoritairement</span>
                                 <div class="final-result" [innerHTML]="typeJoueur"></div>
-                                
+
                             </div>
                             <div class="result_droit">
                                 <div class="intro">
@@ -102,14 +102,14 @@
                                 </div>
                                 <div class="details" [innerHTML]="finalDet">
                                 </div>
-                                
+
                                 <div class="more">
                                     <a target="_blank" href="https://bewizyu.com/create/design-lab/">
                                         En savoir plus
                                     </a>
                                 </div>
-                                
-                            
+
+
                             </div>
 
                             <div class="again">
@@ -118,7 +118,8 @@
                                         NOUS CONTACTER
                                     </div>
                                 </a>
-                                
+
+                                <button class="mx-auto bouton-again btn-share-fb" mat-stroked-button (click)="fbShare()" color="primary">PARTGER SUR FACEBOOK</button>
                                 <button class="mx-auto bouton-contact" mat-stroked-button (click)="reset()" color="primary">RECOMMENCER</button>
                             </div>
 
