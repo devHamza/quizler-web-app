@@ -2,6 +2,33 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import * as _ from 'lodash';
 import { MatStepper } from '@angular/material/stepper';
+import {AngularFirestore} from '@angular/fire/firestore';
+import {AngularFireAnalytics} from '@angular/fire/analytics';
+
+interface Answer {
+  answer: string;
+  answerId: number;
+  factors: {
+    id: string,
+    weight: number
+  }[];
+}
+
+interface QuestionAnswer {
+  question: string;
+  questionId: number;
+  answers?: Answer[];
+}
+interface FireData {
+  beginAt?: Date;
+  endAt?: Date;
+  answers?: QuestionAnswer[];
+  results?: {
+    name: string,
+    value: number,
+    percent: string
+  }[];
+}
 
 @Component({
   selector: 'app-home',
@@ -34,11 +61,19 @@ export class HomeComponent implements OnInit {
   colorScheme = {
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
   };
-  constructor() {
+  fireData: FireData = {};
+  constructor(private firestore: AngularFirestore, private fireAnalytics: AngularFireAnalytics) {
     this.questionsData = require(`../../assets/data/questions_data.json`);
   }
 
   ngOnInit() {
+    this.fireData = {
+      beginAt: new Date(),
+      answers: [],
+      results: []
+    };
+    // this.fireAnalytics.logEvent('start_quiz', {at: new Date()})
+    // .then(res => console.log('SUCCESS:', res), err => console.log('NO: ', err));
   }
 
   isNextStepDisabled(index) {
@@ -56,6 +91,7 @@ export class HomeComponent implements OnInit {
   goForward(stepper: MatStepper, ev: any, index: number) {
     if (ev.source.checked) {
       if (index === this.questionsData.questions.length - 1) {
+        this.fireData.endAt = new Date();
         setTimeout(() => {
           this.calculateResults();
         }, 300);
@@ -76,16 +112,33 @@ export class HomeComponent implements OnInit {
 
   calculateResults() {
     let selectedFactors = [];
-    const firebaseData = [];
+    let index = 0;
     for (const question of this.questionsData.questions) {
+      const questionAnswer: QuestionAnswer = {
+        question: question.question,
+        questionId: index++,
+        answers: []
+      };
       if (!!question.selectedAnswer) {
         selectedFactors = selectedFactors.concat(question.selectedAnswer.factors);
+        questionAnswer.answers.push({
+          answer: question.selectedAnswer.label,
+          answerId: question.answers.findIndex(an => an.label === question.selectedAnswer.label),
+          factors: question.selectedAnswer.factors
+        });
       } else {
         const userAnswers = question.answers.filter(elem => elem.selected);
         for (const answer of userAnswers) {
           selectedFactors = selectedFactors.concat(answer.factors);
+          questionAnswer.answers.push({
+            answer: answer.label,
+            answerId: question.answers.findIndex(an => an.label === answer.label),
+            factors: answer.factors
+          });
         }
       }
+
+      this.fireData.answers.push(questionAnswer);
     }
     const result = {};
     for (const factor of selectedFactors) {
@@ -110,6 +163,7 @@ export class HomeComponent implements OnInit {
     this.pourcentage = 0;
     this.hauteur = '';
     this.marge = '';
+    // const resAnalytics = {};
     for (const key of resultKeys) {
       this.data.push({
         name: this.questionsData.factors[key].label,
@@ -126,6 +180,7 @@ export class HomeComponent implements OnInit {
         marge: ((Math.round((!!result[key] && result[key] > 0 ? result[key] : 0) / 16)) * 85) - 85,
         hauteur: (Math.round((!!result[key] && result[key] > 0 ? result[key] : 0) / 16)) * 85
       });
+      // resAnalytics[`result_${key}`] = Math.round((!!result[key] && result[key] > 0 ? result[key] : 0) / 16 * 100) + '%';
     }
 
     this.data = _.orderBy(this.data, ['value'], ['desc']);
@@ -137,7 +192,27 @@ export class HomeComponent implements OnInit {
       this.shape = this.data[0].result_shape;
       this.finalDet = this.data[0].finalDetails;
       this.finalInt = this.data[0].finalIntro;
+
+      this.fireData.results = this.data.map(datum => ({
+        name: datum.name,
+        value: datum.value,
+        percent: `${datum.pourcent}%`
+      }));
     }
+
+
+    this.firestore.collection('users').add(this.fireData).then(res => {
+      console.log('Result added successfuly to firestore: ', res);
+    }, err => {
+      console.log('Error adding to firestore: ', err);
+    });
+
+
+    // this.fireAnalytics.logEvent('end_quiz', {
+    //   beginAt: this.fireData.beginAt,
+    //   endAt: this.fireData.endAt,
+    //   ...resAnalytics
+    // }).then(res => console.log('Success!!: ', res), err => console.log('Error!! ', err));
 
     this.showResults = true;
   }
@@ -146,15 +221,25 @@ export class HomeComponent implements OnInit {
     window.location.reload();
   }
 
+  // Just to ignore tsLint errors...
+  _window(): any {
+    return window;
+  }
+
   fbShare() {
-    FB.ui({
-      method: 'share',
-      href: 'https://typologie-joueurs.firebaseapp.com',
-      quote: `Moi je suis ${this.data[0].joueur} à ${this.data[0].pourcent}% et vous ?`
-      // quote: `Moi je suis XXXX à XX%, et vous ?`
-    }, (response) => {
-      console.log('FACEBOOK RESPONSE: ', response);
-    });
+    if (!!this._window().FB) {
+      this._window().FB.ui({
+        method: 'share',
+        href: 'https://typologie-joueurs.firebaseapp.com',
+        quote: `Moi je suis ${this.data[0].joueur} à ${this.data[0].pourcent}% et vous ?`
+        // quote: `Moi je suis XXXX à XX%, et vous ?`
+      }, (response) => {
+        console.log('FACEBOOK RESPONSE: ', response);
+      });
+    } else {
+      alert('FB not initialized yet!');
+    }
+
 
     // using feed dialog...
     // FB.ui({

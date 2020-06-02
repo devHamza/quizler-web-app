@@ -25,6 +25,10 @@ import {MatRadioModule} from '@angular/material/radio';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { OnboardComponent } from './onboard/onboard.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {AngularFireAnalyticsModule, DEBUG_MODE, ScreenTrackingService} from '@angular/fire/analytics';
 
 @NgModule({
   declarations: [
@@ -56,9 +60,18 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatStepperModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAnalyticsModule,
+    AngularFirestoreModule
   ],
-  providers: [],
+  providers: [
+    // ScreenTrackingService,
+    {
+      provide: DEBUG_MODE,
+      useValue: false
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
